@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Magus Sync",
+    "version": "1.0",
+    "description": "Extensão para sincronizar cards para total compatibilidade com a Magus",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "logo.png"
+    },
+    "icons": {
+        "48": "logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["libs/sweetalert2.all.min.js", "content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  

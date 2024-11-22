@@ -1,0 +1,61 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 300px;
+            height: auto;
+            padding: 16px;
+            background: #6A6A66;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            color: #FFE0B8;
+        }
+
+        label, input {
+            display: block;
+            color: #FFE0B8;
+        }
+
+        label {
+            margin-bottom: 4px;
+        }
+
+        input {
+            margin-bottom: 8px;
+            width: 100%;
+            background: rgba(36, 31, 48, 0.40);
+            color: #FFE0B8;
+            border: none;
+            height: 24px;
+        }
+
+        button {
+            width: 100%;
+            display: flex;
+            height: 32px;
+            padding: 0px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 20px;
+            border: 1px solid  #241F30;
+            background: rgba(255, 188, 100, 0.80);
+            margin-top: 32px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magus Stock</h1>
+    <label for="api-key-input">Chave de API:</label>
+    <input type="text" id="api-key-input">
+    <label for="seller-id-input">ID do Seller:</label>
+    <input type="text" id="seller-id-input">
+    <button id="save-button">Iniciar</button>
+    <script src="popup.js"></script>
+</body>
+</html>
